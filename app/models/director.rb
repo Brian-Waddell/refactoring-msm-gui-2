@@ -13,6 +13,7 @@
 class Director < ApplicationRecord
   validates(:name, presence: true)
 
-  has_many(:filmography, :class_name => "Movie", :foreign_key => "director_id" )
-  belongs_to(:filmography, :class_name => "Movie", :foreign_key => "movie_id")
+  has_many(:filmography, :class_name => "Movie", :foreign_key => "director_id")
+
+ 
 end
